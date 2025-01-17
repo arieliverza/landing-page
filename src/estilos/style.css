@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+body {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #abb9ca;
+}
+
+header .logo {
+    margin: 20px 20px 20px 20px;
+    padding: 0px 0px 0px 40px;
+}
+
+header .logo-nome {
+    font-family: 'Dosis';
+    font-size: 1.6em;
+    color: #043a69;
+    text-shadow: 2px 2px 3px #F2C2C2;
+    text-transform: uppercase;
+}
+
+header .logo-prof {
+    font-family: 'Montserrat';
+    font-size: 0.7em;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 40px;
+    padding: 36px;
+    gap: 60px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 500;   
+    text-transform: uppercase;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--color4);
+
+}
+
+.menu ul li a:hover {
+    font-weight: 700;
+    color: #074479;
+}
+
+main {
+    padding-bottom: 42px;
+}
+
+main::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; 
+    background: linear-gradient(0deg, #abbbeb 0%, #dde3eb 49%, #f2f2f3ef 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 85% 100%, 70% calc(100% - 20px), 55% 100%, 40% calc(100% - 20px), 25% 100%, 10% calc(100% - 20px), 0 100%);
+}
+
+main .destaque {
+    display: flex;
+    align-items: center;
+    background-color: var(--background1);
+    height: 80vh;
+}
+
+
+main .info-destaque {
+    margin: 84px;
+    padding-left: 50px;
+}
+
+main .sub-destaque {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 1.4em;
+    color: var(--color4);
+    margin-top: 20px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    display: flex;
+    align-self: flex-start;
+}
+
+main .info-destaque h1 {
+    font-family: 'Rubik';
+    font-size: 2.1em;
+    font-weight: 500;
+    color: #043a69;
+    text-shadow: 2px 4px 3px #A4B6CC;
+    text-transform: uppercase;
+    line-height: 64px;
+    letter-spacing: 4px;
+    padding-bottom: 14px;
+    
+}
+
+main .info-destaque p {
+    font-family: 'Montserrat';
+    font-size: .9em;
+    font-weight: 500;
+    margin-bottom: 26px;
+    line-height: 32px;
+    padding-bottom: 10px;
+    text-justify: auto;
+}
+
+main .info-destaque a {
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 14px;
+    text-decoration: none;
+    color: #000;
+    background-color: #024f92cc;
+    border-radius: 6px;
+    transition: ease-in 0.3s;
+}
+
+main .info-destaque a:hover {
+    background-color: #043a69;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.img-destaque {
+    position: relative;
+    display: inline-block;
+    padding: 30px;
+    background-image: url("/src/imagens/placeholder.png"), url("/src/imagens/frame2.png");
+    background-repeat: no-repeat;
+    background-position: top center, center center;
+    background-size: 82%;
+    clip-path: ellipse(37% 50% at 50% 50%);
+}
+
+.img-destaque img {
+    display: block;
+    visibility: hidden; 
+    max-width: 90%;
+}
+
+.titulo-carrossel {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 2em;
+    color: #c57171;
+    text-shadow: 2px 2px 3px #f1c8c8;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px;
+    padding-top: 80px;
+}
+
+.carrossel-servicos {
+    display: flex;
+    align-items: stretch;
+    margin: 18px;
+}
+
+.card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   margin-right: 10px;
+   padding: 15px 22px;
+   width: 100%;
+}
+
+.card:nth-child(odd) {
+    border: solid 1px #F2C2C2;
+    box-shadow: 3px 6px 6px #7733339a;
+    border-radius: 10px;
+    background-color: #f5dcdcea;
+}
+
+.card:nth-child(even) {
+    border: solid 1px #91c7f7cc;
+    box-shadow: 3px 6px 6px #21374bab;
+    border-radius: 10px;
+    background-color: var(--background1);
+}
+
+.card img {
+    display: flex;
+    justify-content: center;
+    width: 58px;
+}
+
+.card #img-ans {
+    padding-top: 18px;
+    margin-bottom: 20px;
+}
+
+.card #img-cres {
+    width: 68px;
+    padding-bottom: 10px;
+}
+
+.card .conteudo-card {
+    display: flex;
+    text-align: center;
+    margin-top: 14px;
+    font: normal 0.8em Montserrat;
+    line-height: 18px;
+    word-spacing: 5px;
+}
+
+.sobre {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: var(--background1);
+}
+
+.titulo-sobre {
+    text-align: center;
+    font-family: 'Rubik';
+    font-size: 2.2em;
+    font-weight: 400;
+    color: #043a69;
+    text-shadow: 1px 1px 2px #024f92cc;
+}
+
+.info-sobre {
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.img-place {
+    margin: 10px;
+    max-width: 27.8em;
+    height: auto;
+    border-radius: 20px;
+    border: 2px dotted #043a69;
+    box-shadow: -4px 4px 8px #0102475d;
+}
+
+.txt-sobre {
+    background-color: #fff;
+    height: 27.5em;
+    margin: 10px;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 12px 3px #0102475d;
+    font-family: 'Montserrat';
+    word-spacing: 5px;
+    text-align: center;
+    line-height: 27px;
+}
+
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+
+}
+
+.servico {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat';
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos responsivos (Media Queries) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    nav li {
+        margin: 5px 0;
+    }
+    #sobre img {
+        float: none;
+        margin: 0 auto 20px;
+        display: block;
+    }
+}
