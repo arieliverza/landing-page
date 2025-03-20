@@ -7,121 +7,150 @@
     <link rel="stylesheet" href="src/estilos/style.css">
     <link rel="stylesheet" href="src/estilos/variaveis.css">
     <link rel="stylesheet" href="src/estilos/reset.css">
+    <link rel="stylesheet" href="src/estilos/responsivo.css">
     <title>Psicóloga Denise Cristina Santos</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <h2 class="logo-nome">Denise Cristina Santos</h2>
-            <h3 class="logo-prof">Psicóloga Clinica e Organizacional</h3>
+            <h1 class="logo-nome">Denise Cristina Santos</h1>
+            <p class="logo-prof">Psicóloga Clínica e Organizacional</p>
         </div>
-        <div class="menu">
+        <nav class="menu">
             <ul>
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Benefícios</a></li>
                 <li><a href="#">Sobre</a></li>
+                <li><a href="#">Atendimento</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
+
     <main>
-        <div class="destaque">
-            <section class="info-destaque">
-                <h2 class="sub-destaque">Pisicoterapia Online</h2>
-                <h1>Simplificando a <br>saúde mental</h1>
-                <p>Você merece viver uma vida mais leve e feliz. A psicoterapia pode te ajudar a alcançar esse objetivo. <br>Agende uma sessão e descubra como a terapia pode transformar a sua vida. <br>O primeiro passo é o mais importante!</p>
-                <a href="#">Entre em contato</a>
-            </section>
+        <section class="destaque">
+            <div class="info-destaque">
+                <h2 class="sub-destaque">Psicoterapia Online</h2>
+                <h1>Simplificando a saúde mental</h1>
+                <p>Você merece viver uma vida mais leve e feliz. A psicoterapia pode te ajudar a alcançar esse objetivo. Agende uma sessão e descubra como a terapia pode transformar a sua vida. O primeiro passo é o mais importante!</p>
+                <a href="whatsapp://send?text=Olá, gostaria de agendar uma sessão de psicoterapia." class="btn-contato">
+                    <img src="/src/imagens/icones/wpp.svg" alt="WhatsApp">Agendar consulta
+                </a>
+            </div>
             <div class="img-destaque">
-                <img src="./src/imagens/placeholder-ia.png" alt="">
-            </div>
-        </div>
-        </main>
-        <h2 class="titulo-carrossel">Benefícios da Terapia</h2>
-        <section class="carrossel-servicos">
-            <div class="card">
-                <img src="./src/imagens/icones/ansiedade-100.png" id="img-ans" alt="Ícone pessoa com ansiedade">
-                <p class="conteudo-card">
-                    Sinta-se mais leve e livre da ansiedade. Através de técnicas eficazes, você aprenderá a controlar os pensamentos e as emoções, promovendo mais calma e tranquilidade no seu dia a dia.
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="./src/imagens/icones/depressao-100.png" id="img-dep" alt="Ícone pessoa com depressão">
-                <p class="conteudo-card">
-                    A terapia pode te ajudar a superar a depressão, aumentando sua autoestima e proporcionando novas perspectivas para a vida.
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="./src/imagens/icones/love-self-100.png" id="img-love" alt="Ícone autoestima">
-                <p class="conteudo-card">
-                    Acredite em si mesmo! Trabalharemos juntos para fortalecer sua autoestima, superando as crenças limitantes e impulsionando seu crescimento pessoal.
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="./src/imagens/icones/familia-100.png" id="img-fam" alt="">
-                <p class="conteudo-card">
-                    A terapia familiar pode auxiliar na resolução de conflitos, na melhoria da comunicação e na construção de relacionamentos mais saudáveis.
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="./src/imagens/icones/black-ribbon-100.png" id="img-rib" alt="">
-                <p class="conteudo-card">
-                    Enfrente o luto de forma saudável. Você terá um espaço seguro para expressar seus sentimentos e encontrar novas formas de lidar com a perda.
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="./src/imagens/icones/crescimento-pessoal-100.png" id="img-cres" alt="">
-                <p class="conteudo-card">
-                    Invista em seu crescimento pessoal! Descubra seu potencial e alcance seus objetivos, através de um processo de autoconhecimento e desenvolvimento de habilidades.
-                </p>
+                <img src="/src/imagens/placeholder.png" alt="Imagem de destaque">
             </div>
         </section>
-    
+
+        
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 248">
+            <path fill="#dde3eb" d="M0,160L60,170.7C120,181,240,203,360,192C480,181,600,139,720,133.3C840,128,960,160,1080,170.7C1200,181,1320,171,1380,165.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+        </svg> -->
+
+        <section class="beneficios">
+            <h2 class="titulo-carrossel">Benefícios da Terapia</h2>
+            <div class="carrossel-servicos">
+                <!-- Card de benefício -->
+                <div class="card">
+                    <img src="./src/imagens/icones/ansiedade-100.png" alt="Ansiedade">
+                    <p>Sinta-se mais leve e livre da ansiedade, controlando pensamentos e emoções.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./src/imagens/icones/depressao-100.png" alt="Depressão">
+                    <p>Supere a depressão, aumente sua autoestima e tenha novas perspectivas de vida.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./src/imagens/icones/love-self-100.png" alt="Autoestima">
+                    <p>Fortaleça sua autoestima e supere crenças limitantes.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./src/imagens/icones/familia-100.png" alt="Terapia Familiar">
+                    <p>Auxílio na resolução de conflitos e melhoria da comunicação familiar.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./src/imagens/icones/black-ribbon-100.png" alt="Luto">
+                    <p>Enfrente o luto de forma saudável, com suporte para lidar com a perda.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./src/imagens/icones/crescimento-pessoal-100.png" alt="Crescimento Pessoal">
+                    <p>Descubra seu potencial e alcance seus objetivos através do autoconhecimento.</p>
+                </div>
+
+                <div class="btn-carrossel">
+                    <img src="/src/imagens/icones/wpp.svg" alt="WhatsApp">
+                    <a href="#">Agendar consulta</a>
+                </div>
+            </div>
+        </section>
+
         <section class="sobre">
-            <h3 class="titulo-sobre">Sobre Mim</h3>
+            <h3 class="titulo-sobre">Prazer, Denise Cristina Santos</h3>
             <div class="info-sobre">
-            <img class="img-place" src="./src/imagens/placeholder.jpg" alt="">
-                <p class="txt-sobre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente soluta fugiat maxime voluptatum ut, voluptas quidem fuga? Perferendis harum quidem fugiat obcaecati maiores. Odio quod et, ipsa neque optio quam aperiam aut aliquid suscipit eveniet nesciunt reprehenderit, voluptate, adipisci dicta sint commodi quos enim ut quisquam dolores sit numquam repudiandae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis laborum sint eveniet impedit saepe nihil dolor culpa rerum fuga natus itaque velit deserunt cupiditate obcaecati, nobis quasi, doloribus nam.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut sapiente, sunt deleniti omnis aliquam commodi, voluptate esse dolorem perferendis quos voluptates, maxime officia delectus. Odit, nisi vel. Hic, neque fugit.
-                </p>
+                <img class="img-sobre" src="./src/imagens/img-psi.png" alt="Imagem sobre Denise">
+                <div class="txt-container">
+                    <p class="txt-sobre">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente soluta fugiat maxime voluptatum ut, voluptas quidem fuga? Perferendis harum quidem fugiat obcaecati maiores...
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui non magnam ducimus. Praesentium, repudiandae fuga libero optio porro odio molestiae autem rerum nostrum tempora, quidem voluptas! Nobis mollitia maiores nostrum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, assumenda dicta blanditiis ipsa autem, recusandae dolores nam facere nisi vitae commodi soluta fugit iste sequi accusantium voluptatem iusto molestiae qui.
+                    Ullam excepturi alias recusandae rem. Illum accusamus quos id dolore ullam quas labore rerum quae ducimus odit corporis aliquam corrupti veritatis reprehenderit blanditiis cupiditate unde earum ut officia, sapiente nesciunt.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                    <br><strong>Que tal embarcarmos juntas nessa jornada? Agende sua consulta e dê o primeiro passo para a transformação que você merece!</strong>
+                    </p>
+                    <div class="btn-sobre">
+                        <img src="/src/imagens/icones/wpp.svg" alt="WhatsApp">
+                        <a href="#">Quero apoio profissional</a>
+                    </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="atendimento">
+            <h2 class="titulo-atd">Atendimento</h2>
+            <div class="info-atd">
+                <div class="atd">
+                    <h3>Psicoterapia Online</h3>
+                    <p>Oferecemos um espaço seguro para promover o autoconhecimento e o bem-estar emocional.  
+                    A psicoterapia online é uma maneira acessível e eficaz de cuidar da sua saúde mental, proporcionando suporte profissional qualificado no conforto da sua casa. Comodidade, sigilo e acolhimento são pilares essenciais dos atendimentos.</p>
+                </div>
+                <div class="atd">
+                    <h3>Como funciona?</h3>
+                    <p>As sessões são realizadas por videochamada em uma plataforma segura e confiável. O processo terapêutico é personalizado para atender às suas necessidades.</p>
+                </div>
             </div>
         </section>
+        
+        <section class="contato">
+            <div class="info-contato">
 
-    <section class="servicos">
-        <h2>Serviços</h2>
-        <div class="servico">
-            <h3>Terapia Individual</h3>
-            <p> O objetivo principal é promover o autoconhecimento, a saúde mental e o bem-estar emocional do paciente. É um espaço seguro e confidencial onde o indivíduo pode explorar seus pensamentos, sentimentos, comportamentos e dificuldades.</p>
-        </div>
-        <div class="servico">
-            <h3>Psicologia Organizacional</h3>
-            <p>A Psicologia organizacional busca aplicar os princípios da Psicologia para entender e melhorar o ambiente de trabalho, buscando o equilíbrio entre os objetivos da organização e o bem-estar dos seus colaboradores.</p>
-        </div>
-        </section>
+                <div class="dados">
+                    <h2>Entre em Contato</h2>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato para agendar uma consulta ou tirar dúvidas.</p>
-        <form>
-            <input type="text" placeholder="Seu Nome">
-            <input type="email" placeholder="Seu Email">
-            <textarea placeholder="Sua Mensagem"></textarea>
-            <button type="submit">Enviar Mensagem</button>
-        </form>
-        <div class="info-contato">
-           <p>Telefone: (XX) XXXX-XXXX</p>
-           <p>Email: email@exemplo.com</p>
-           <p>Endereço: Rua Exemplo, 123 - Cidade/UF</p>
-       </div>
-    </section>
+                    <p><strong>Atendimento:</strong></p>
+                    <p>Segunda à Sexta das 09h às 19h</p>
+
+                    <div class="btn-wpp-contato">
+                        <img src="/src/imagens/icones/wpp.svg" alt="WhatsApp">
+                        <a href="https://wa.me/5599999999999" class="whatsapp" target="_blank">Fale comigo no Whatsapp</a>
+                    </div>
+        
+                    <div class="redes-sociais">
+                        <a class="insta" href="https://instagram.com/seu_instagram" target="_blank"><img src="/src/imagens/icones/instagram32.png" alt="Logo do Instagram"></a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/SEU_LINKEDIN" target="_blank"><img src="/src/imagens/icones/linkedin32.png" alt="Logo do Linkedin"></a>
+                    </div>
+                </div>
+        
+                <div class="aviso">
+                    <p>Atenção: Se estiver em crise ou em situação de emergência, ligue para o Centro de Valorização da Vida - CVV (188) ou através do chat disponível no site cvv.org.br. Em caso de risco de vida procure um hospital mais próximo ou entre em contato com o SAMU (192) ou Corpo de bombeiros (193).</p>
+                </div>
+            </div>
+        </section>        
+    </main>
 
     <footer>
-        <p>&copy; 2024 Nome da Psicóloga</p>
+        <p>&copy; 2025 Denise Cristina Santos | Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

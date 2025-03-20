@@ -1,0 +1,36 @@
+
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .destaque {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-destaque {
+        max-width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .img-destaque {
+        /* max-width: 80%; 
+        margin-top: 20px; */
+        display: none;
+    }
+
+    .carrossel-servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 8px;
+    }
+}
+
