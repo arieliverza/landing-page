@@ -12,25 +12,75 @@
 
     .info-destaque {
         max-width: 100%;
-        margin-right: 0;
+        margin: 0;
+        padding: 6px;
         text-align: center;
     }
 
+    .btn-contato {
+        width: 100%;
+        margin-bottom: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+
     .img-destaque {
-        /* max-width: 80%; 
-        margin-top: 20px; */
         display: none;
     }
 
     .carrossel-servicos {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin-top: 24px;
     }
 
     .card {
         width: 100%;
         max-width: 300px;
         margin-top: 8px;
+    }
+
+    .btn-carrossel {
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre  {
+        max-width: 380px;
+    }
+
+    .info-sobre {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-sobre {
+        width: 110%;
+        height: 450px;
+    }
+
+    .txt-container {
+        width: 110%;
+
+    }
+
+    .info-contato {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .aviso {
+        max-width: 100%;
+        padding: 15px;
+    }
+    
+    .redes-sociais img {
+        width: 36px;
+        margin: 8px;
     }
 }
 
