@@ -54,7 +54,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 60vh;
+    height: 86vh;
     padding: 20px;
     background-color: var(--background1);
     flex-wrap: wrap;
@@ -157,10 +157,28 @@ header {
     max-width: 100%;
 }
 
+.onda-divisor {
+    position: absolute;
+    top: 80;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.onda-divisor svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 106px;
+}
+
 .titulo-carrossel {
     justify-self: center;
+    margin-top: 250px;
     font-weight: 500;
     color: var(--color-tertiary);
+
 }
 
 .carrossel-servicos {
@@ -168,7 +186,8 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin-top: 50px;
+    margin-top: 40px;
+    max-width: 100%;
 }
 
 .card {
@@ -193,7 +212,7 @@ header {
 
 .btn-carrossel {
     display: flex;
-    margin: 36px;
+    margin: 32px;
     padding: 12px 24px;
     border-radius: 5px;
     cursor: pointer;
@@ -210,8 +229,7 @@ header {
     color: #fff;
     align-self: center;
     margin-left: 10px;
-    font-size: 1.1em;
-    
+    font-size: 1.1em;  
 }
 
 .btn-carrossel img {
@@ -227,7 +245,7 @@ header {
 .sobre {
     text-align: center;
     max-width: 900px;
-    margin: auto;
+    margin: 200px;
 }
 
 .info-sobre {
@@ -253,7 +271,7 @@ header {
 .txt-sobre {
     flex-grow: 1;
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 2;
     max-height: 100%;
     overflow: hidden;
     color: var(--color-text);    
@@ -295,6 +313,7 @@ header {
     max-width: 100vw;
 }
 
+
 .titulo-atd {
     font-family: 'Rubik', sans-serif;
     font-size: 2em;
@@ -311,6 +330,12 @@ header {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+}
+
+.info-atd:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 10px #bda398;
 }
 
 .atd {
@@ -349,6 +374,7 @@ header {
     align-items: center;
     max-width: 100vw;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 .contato h2 {
